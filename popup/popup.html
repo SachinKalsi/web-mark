@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Web Mark</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="popup">
+    <header>
+      <h1>Web Mark</h1>
+    </header>
+
+    <section class="toggle-section">
+      <label class="toggle-label">
+        <input type="checkbox" id="highlightingEnabled" />
+        <span>Enable text highlighting</span>
+      </label>
+      <p class="toggle-hint">When off, selecting text will not create or sync highlights.</p>
+    </section>
+
+    <section class="color-picker">
+      <label>Highlight colour</label>
+      <div class="colors">
+        <button type="button" class="color yellow" data-color="yellow" title="Yellow"></button>
+        <button type="button" class="color green" data-color="green" title="Green"></button>
+        <button type="button" class="color blue" data-color="blue" title="Blue"></button>
+        <button type="button" class="color pink" data-color="pink" title="Pink"></button>
+        <button type="button" class="color orange" data-color="orange" title="Orange"></button>
+        <button type="button" class="color purple" data-color="purple" title="Purple"></button>
+      </div>
+    </section>
+
+    <section class="notes">
+      <label>Notes for this page</label>
+      <textarea id="notesInput" rows="4" placeholder="Add notes for this page..."></textarea>
+      <button type="button" id="saveNotes">Save notes</button>
+      <span id="notesStatus" class="status"></span>
+    </section>
+
+    <section class="sync">
+      <button type="button" id="syncToGoogle">Sync to Google Sheets</button>
+      <button type="button" id="importFromGoogle">Import from Google Sheets</button>
+      <span id="syncStatus" class="status"></span>
+    </section>
+
+    <p class="hint">Turn on &quot;Enable text highlighting&quot; above, then select text on the page to highlight.</p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,66 @@
+/* Highlight spans - injected by content script */
+.wh-highlight {
+  border-radius: 2px;
+  padding: 0 1px;
+}
+.wh-highlight-yellow { background-color: rgba(255, 235, 59, 0.6); }
+.wh-highlight-green { background-color: rgba(76, 175, 80, 0.5); }
+.wh-highlight-blue { background-color: rgba(33, 150, 243, 0.4); }
+.wh-highlight-pink { background-color: rgba(233, 30, 99, 0.4); }
+.wh-highlight-orange { background-color: rgba(255, 152, 0, 0.5); }
+.wh-highlight-purple { background-color: rgba(156, 39, 176, 0.4); }
+
+/* Context menu for highlight: remove / change color */
+.wh-context-menu {
+  position: fixed;
+  z-index: 2147483647;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  padding: 8px 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+  min-width: 160px;
+}
+.wh-menu-remove {
+  display: block;
+  width: 100%;
+  padding: 6px 8px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 4px;
+  background: #f5f5f5;
+  cursor: pointer;
+  text-align: left;
+}
+.wh-menu-remove:hover { background: #e0e0e0; }
+.wh-menu-label { display: block; margin-bottom: 4px; color: #666; font-size: 11px; }
+.wh-menu-colors { display: flex; gap: 4px; flex-wrap: wrap; }
+.wh-menu-color {
+  width: 24px; height: 24px; border: 1px solid #ccc; border-radius: 4px;
+  cursor: pointer; padding: 0;
+}
+.wh-menu-color.yellow { background: rgba(255,235,59,0.9); }
+.wh-menu-color.green { background: rgba(76,175,80,0.8); }
+.wh-menu-color.blue { background: rgba(33,150,243,0.7); }
+.wh-menu-color.pink { background: rgba(233,30,99,0.7); }
+.wh-menu-color.orange { background: rgba(255,152,0,0.8); }
+.wh-menu-color.purple { background: rgba(156,39,176,0.7); }
+
+.wh-toast {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2147483647;
+  background: #333;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: opacity 0.3s;
+}
+.wh-toast-hide { opacity: 0; }

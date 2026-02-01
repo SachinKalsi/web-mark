@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  font-size: 13px;
+}
+
+.popup {
+  padding: 12px 14px;
+}
+
+header h1 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.toggle-section { margin-bottom: 12px; }
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+.toggle-label input[type="checkbox"] { width: 18px; height: 18px; cursor: pointer; }
+.toggle-hint { margin: 4px 0 0 26px; font-size: 11px; color: #666; }
+
+section {
+  margin-bottom: 14px;
+}
+
+section label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  color: #333;
+}
+
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.color {
+  width: 28px;
+  height: 28px;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.color:hover {
+  border-color: #666;
+}
+
+.color.active {
+  border-color: #111;
+  box-shadow: 0 0 0 1px #111;
+}
+
+.color.yellow { background-color: rgba(255, 235, 59, 0.9); }
+.color.green { background-color: rgba(76, 175, 80, 0.8); }
+.color.blue { background-color: rgba(33, 150, 243, 0.7); }
+.color.pink { background-color: rgba(233, 30, 99, 0.7); }
+.color.orange { background-color: rgba(255, 152, 0, 0.8); }
+.color.purple { background-color: rgba(156, 39, 176, 0.7); }
+
+#notesInput {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 13px;
+}
+
+#notesInput:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+#saveNotes {
+  margin-top: 6px;
+  padding: 6px 12px;
+  background: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+#saveNotes:hover {
+  background: #1976d2;
+}
+
+.sync {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sync button {
+  padding: 8px 12px;
+  background: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.sync button:hover {
+  background: #eee;
+}
+
+#syncToGoogle {
+  background: #4caf50;
+  color: white;
+  border-color: #388e3c;
+}
+
+#syncToGoogle:hover {
+  background: #388e3c;
+}
+
+.status {
+  font-size: 11px;
+  color: #666;
+  min-height: 14px;
+}
+
+.hint {
+  margin: 8px 0 0 0;
+  font-size: 11px;
+  color: #888;
+}
