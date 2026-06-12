@@ -1,6 +1,9 @@
 # Web Mark – Chrome Extension
 
 Highlight text on any webpage in different colours and take page-level notes. Data is stored in the browser for fast access and can be synced to Google Sheets for backup and use on other devices.
+<img width="1039" height="423" alt="image" src="https://github.com/user-attachments/assets/75cf69e0-8ed5-4682-bc66-32d7dd125ebb" />
+
+
 
 ## Features
 
